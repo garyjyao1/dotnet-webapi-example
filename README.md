@@ -1,20 +1,20 @@
 ## dotnet-webapi-example
 
-[![Build](https://github.com/jecklgamis/dotnet-webapi-example/actions/workflows/build.yml/badge.svg)](https://github.com/jecklgamis/dotnet-webapi-example/actions/workflows/build.yml)
+[![Build](https://github.com/jecklgamis/dotnet-webapi-example/actions/workflows/build.yaml/badge.svg)](https://github.com/jecklgamis/dotnet-webapi-example/actions/workflows/build.yaml)
 
 An example Web API app using ASP.NET Core.
 
 Docker : `docker run -it jecklgamis/dotnet-webapi-example:main`
 
 ## What's In the Box?
-* Web API app using .NET 7
+* Web API app using .NET 10
 * Docker image
 * Kubernetes Helm Chart
 * GitHub Action workflows
 
 ## Requirements
 
-* [.NET 7](https://.NET.microsoft.com/en-us/download/.NET/7.0)
+* [.NET 10](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
 * [Docker](https://www.docker.com/)
 * [Make](https://www.gnu.org/software/make/) (optional)
 
