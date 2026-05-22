@@ -1,0 +1,24 @@
+name: Test sample workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: windows-2022
+    steps:
+      - name: Install dotnet framework
+        run: choco install dotnet-sdk -y
+      
+      - name: Install dotnet-sonarscanner
+        run: dotnet tool install --global dotnet-sonarscanner --version "10.4.1"
+      
+      - name: Refresh environment before verification
+        run: |
+          # Import-Module $env:ChocolateyInstall\helpers\chocolateyProfile.psm1
+          # refreshenv
+          dotnet sonarscanner --version
+        shell: pwsh
+      
+      - name: Simple test
+        run: echo "This is a simple test to check the workflow is working"
