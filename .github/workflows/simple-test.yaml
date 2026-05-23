@@ -17,8 +17,8 @@ jobs:
         run: |
           # Import-Module $env:ChocolateyInstall\helpers\chocolateyProfile.psm1
           # refreshenv
+          Write-Host "PATH before: $env:PATH"
           dotnet sonarscanner --version
-        shell: pwsh
       
       - name: Simple test
         run: echo "This is a simple test to check the workflow is working"
